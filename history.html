@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.2/css/dataTables.bootstrap5.css">
+    <script src="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body{
+          background-color: #f2e6e4;
+        }
+        .icon{
+          position: absolute;
+          left: 50%;
+          transform: translate(-50%);
+        }
+        </style>
+</head>
+<body>
+    <nav style="background-color: #413d51;" class="navbar navbar-expand-sm  navbar-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="images/Picture1.png" alt="Logo" style="width:50px;" class="rounded-pill">&nbsp;<b style="color: #f2e6e4;font-style: italic;">Royal Philatelic</b>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+          <div class="collapse navbar-collapse " id="collapsibleNavbar">
+    
+            <ul class="navbar-nav ">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><b>About Us</b></a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">History</a></li>
+                      <li><a class="dropdown-item" href="#">Meet the team</a></li>
+                     
+                    </ul>
+                  </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><b>Catalogue</b></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="revenue.html">Revenue Stamps</a></li>
+                  <li><a class="dropdown-item" href="great.html">Great Britain Stamps</a></li>
+                  <li><a class="dropdown-item" href="#">Rare Stamps</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><b>Auctions</b></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Auction House</a></li>
+                  <li><a class="dropdown-item" href="#">Publishing House</a></li>
+                 
+                </ul>
+              </li>   
+            </ul>
+          </div>
+          
+          <a style=" background-color: #f2e6e4; color:#413d51;  "  href="tel:6263635711" class="btn"><b>Contact Us</b></a>&emsp;
+          <i style="color: #f2e6e4; font-size: x-large;" class="bi bi-bag-heart-fill"></i>&emsp;
+          <a style=" color: #f2e6e4; text-align: center; font-size: x-large;" href="index.html"> <i class="bi bi-grid-1x2-fill"></i></a>
+        </div>
+      </nav><br><br><br><br><br>
+
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+        
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="h1.jpg" alt="Los Angeles" class="d-block" style="width:100%; height: 500px; opacity: 50%;">
+            <div class="carousel-caption">
+                <h3 style="color: #413d51;">Postage stamp collecting began at the same time that stamps were first issued, and by 1860 thousands of collectors and stamp dealers were appearing around the world as this new study and hobby spread across Europe, European colonies, the United States and other parts of the world.</h3><br>
+
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/h2.jpg" alt="Chicago" class="d-block" style="width:100%; height: 500px; opacity: 50%;">
+            <div class="carousel-caption">
+              <h3 style="color: #413d51;">It’s the hobby that literally falls on your doormat and has enraptured people for over a century. Stamp collecting offers a window into the past; reflecting times of feast and famine, war and peace. Stamps have commemorated success, and depicted the highs and lows of popular culture. The humble stamp has been present through some of the most momentous moments in history, providing an accessible hobby in which 10 per cent of the US population once participated.</h3><br>
+           
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/h1.jpg" alt="New York" class="d-block" style="width:100%; height: 500px; opacity: 50%; ">
+            <div class="carousel-caption">
+              <h3 style="color: #413d51;">In the United States, the 24c Inverted Jenny from 1918 enjoys special status as a renowned and revered stamp that has even lit up the silver screen, with the help of Richard Pryor in the film, Brewster’s Millions. Beloved among collectors, individual Inverted Jenny stamps have been known to sell for hundreds of thousands of dollars at auction.</h3><br>
+     
+            </div>
+          </div>
+        </div>
+        
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div><br><br>
+
+      <footer style="background-color: #413d51; height: 200px;"><br><br>
+        <div class="container-fluid ">
+    
+          <h3 style=" color: #f2e6e4; text-align: center; font-style: italic;" >Contact US</h3>
+          <div class="icon">
+          <a style=" color: #f2e6e4; text-align: center; font-size: x-large;"  href="tel:6263635711"><i class="bi bi-telephone-fill"></i></a>&emsp;
+          <a style=" color: #f2e6e4; text-align: center; font-size: x-large;" href="apoorvabhardwaj89@gmail.com"><i class="bi bi-envelope-arrow-down-fill"></i></a>
+        </div><br><br>
+    
+      
+     <p style=" color: #f2e6e4; text-align: center; font-style: italic; font-size: xx-small;" >@2024RoyalPhilatelic.All rights reserved</p>
+        </div>
+      </footer>
+
+      
+        
+    
+    
+</body>
+</html>
