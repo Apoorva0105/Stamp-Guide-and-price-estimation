@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StampPedia - Your Stamp Information Hub</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.2/css/dataTables.bootstrap5.css">
+    <script src="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav id="home" style="background-color: #413d51;" class="navbar navbar-expand-sm  navbar-dark fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="images/Picture1.png" alt="Logo" style="width:50px;" class="rounded-pill">&nbsp;<b style="color: #f2e6e4;font-style: italic;">Royal Philatelic</b>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse d-flex justify-content-center" id="collapsibleNavbar">
+        
+        
+                <ul class="navbar-nav ">
+                  
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><b>About Us</b></a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="history.html">History</a></li>
+                          <li><a class="dropdown-item" href="#">Meet the team</a></li>
+                         
+                        </ul>
+                      </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><b>Catalogue</b></a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="revenue.html">Revenue Stamps</a></li>
+                      <li><a class="dropdown-item" href="great.html">Great Britain Stamps</a></li>
+                      <li><a class="dropdown-item" href="rare.html">Rare Stamps</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><b>Auctions</b></a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Auction House</a></li>
+                      <li><a class="dropdown-item" href="#">Publishing House</a></li>
+                     
+                    </ul>
+                  </li>   
+                </ul>
+              </div>
+              <a style=" background-color: #f2e6e4; color:#413d51;  "  href="tel:6263635711" class="btn">Contact Us</a>&emsp;
+              
+              <a style=" color: #f2e6e4; text-align: center; font-size: x-large;" href="#home"> <i class="bi bi-grid-1x2-fill"></i></a>
+            </div>
+            <div class="search-bar">
+              <input type="text" placeholder="Search stamps...">
+              <button><i style="background-color: #413d51;" class="fas fa-search"></i></button>
+          </div>
+          </nav><br><br><br><br>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/stamp.jpg" alt="Los Angeles" class="d-block" style="width:100%; height: 500px; opacity: 40%;">
+        <div class="carousel-caption">
+            <h3 style="color: #413d51;">Stamp collecting is an obsession, an occupation, a disease, an addiction, a fascination, an absurdity, a fate. It is not a hobby. Those who do it must do it.</h3><br>
+           
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/stamp1.jpg" alt="Chicago" class="d-block" style="width:100%; height: 500px; opacity: 40%;">
+        <div class="carousel-caption">
+          <h3 style="color: #413d51;">The king of hobbies or the 'Hobby of Kings', as one might say, stamp collecting is indeed an art by itself.</h3><br>
+          <a href="login.html"><button style="background-color: #413d51; color: #f2e6e4; width: 100px; border-radius: 12px;"  class="btn">View Offer</button></a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/stamp2.jpg" alt="New York" class="d-block" style="width:100%; height: 500px; opacity: 40%; ">
+        <div class="carousel-caption">
+          <h3 style="color: #413d51;">Philately starts where the catalogue ends.</h3><br>
+          <a href="login.html"><button style="background-color: #413d51; color: #f2e6e4; width: 200px; border-radius: 12px;"  class="btn">Upcoming Auction</button></a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="categories" id="Catalog">
+        <h2 style="text-align: center; color: #413d51; ">Browse by Category</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="images/rare.jpg" alt="Rare Stamps">
+                <h3>Rare Stamps</h3>
+                <p>Discover the world's most valuable stamps</p>
+                <a  style="position:relative; left:50%; bottom:5%;transform:translate(-50%); background-color: #413d51;;
+                padding:10px 50px 10px 50px;
+                border-radius: 25px;
+                border-color:#413d51; ;
+                color: antiquewhite; text-decoration: none;" href="rare.html" type="submit">Explore</a>
+            </div>
+            <div class="category-card">
+                <img src="images/british.jpg" alt="Historical">
+                <h3>Historical</h3>
+                <p>Stamps that marked important events and history</p>
+                <a  style="position:relative; left:50%; bottom:5%;transform:translate(-50%); background-color: #413d51;;
+                padding:10px 50px 10px 50px;
+                border-radius: 25px;
+                border-color:#413d51; ;
+                color: antiquewhite; text-decoration: none;" href="great.html" type="submit">Explore</a>
+            </div>
+            <div class="category-card">
+                <img src="images/rev1.jpg" alt="Commemorative">
+                <h3>Commemorative</h3>
+                <p>Special edition and commemorative stamps</p>
+                <a  style="position:relative; left:50%; bottom:5%; transform:translate(-50%); background-color: #413d51;;
+                padding:10px 50px 10px 50px;
+                border-radius: 25px;
+                border-color:#413d51; ;
+                color: antiquewhite;  text-decoration: none;" href="revenue.html" type="submit">Explore</a>
+            </div>
+            <div class="category-card">
+                <img src="images/h3.jpg" alt="Regional">
+                <h3>Regional</h3>
+                <p>Stamps from different regions worldwide</p>
+                <a  style="position:relative; left:50%; bottom:5%; transform:translate(-50%); background-color: #413d51;;
+                padding:10px 50px 10px 50px;
+                border-radius: 25px;
+                border-color:#413d51; ;
+                color: antiquewhite; text-decoration: none;" href="rare.html" type="submit">Explore</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Stamps -->
+    <section style="background-color: #413d51;" class="featured-stamps">
+        <h2>Featured Stamps</h2>
+        <div class="stamp-grid">
+            <!-- Stamp cards will be dynamically added here -->
+        </div>
+    </section>
+
+    <!-- Value Calculator -->
+     <fieldset>
+    <section  class="value-calculator">
+        <h2 style="text-align: center; color:#413d51">Stamp Value Calculator</h2><br>
+        <div class="calculator-container">
+            <form id="valueCalculatorForm">
+                <div class="form-group">
+                    <label>Country of Origin</label>
+                    <select required>
+                        <option value="">Select Country</option>
+                        <option value="usa">United States</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="canada">Canada</option>
+                        <!-- Add more countries -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Year of Issue</label>
+                    <input type="number" min="1840" max="2024" required>
+                </div>
+                <div class="form-group">
+                    <label>Condition</label>
+                    <select required>
+                        <option value="">Select Condition</option>
+                        <option value="mint">Mint</option>
+                        <option value="near-mint">Near Mint</option>
+                        <option value="fine">Fine</option>
+                        <option value="good">Good</option>
+                        <option value="fair">Fair</option>
+                    </select>
+                </div>
+                <button  style="position:relative; left:50%;transform:translate(-50%); background-color: #413d51;;
+                padding:10px 50px 10px 50px;
+                border-radius: 25px;
+                border-color:#413d51; ;
+                color: antiquewhite;" type="submit">Calculate Value</button>
+            </form>
+            <div id="calculationResult"></div>
+        </div>
+    </section>
+</fieldset><br>
+
+    <!-- Chatbot -->
+    <div class="chatbot-widget">
+        <div class="chatbot-button" onclick="toggleChat()">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div class="chatbot-container" id="chatbot">
+            <div class="chatbot-header">
+                <h3>Royal Philatelic Assistant</h3>
+                <span class="close-chat" onclick="toggleChat()">&times;</span>
+            </div>
+            <div class="chatbot-messages" id="chatMessages">
+                <!-- Messages will be added here -->
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="userInput" placeholder="Ask about stamps...">
+                <button onclick="sendMessage()">
+                    <i style="background-color: #413d51;" class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Royal Philatelic</h3>
+                <p>Your comprehensive guide to stamp collecting and valuation.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#catalog">Stamp Catalog</a></li>
+                    <li><a href="#value">Value Guide</a></li>
+                    <li><a href="tel:6263635711">Contact Us</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="tel:6263635711"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024Royal Philatelic. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="chatbot.js"></script>
+    <script src="calculator.js"></script>
+    <script src="stamp.js"></script>
+
+</body>
+</html>
